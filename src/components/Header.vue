@@ -1,7 +1,7 @@
 <template>
     <header>
         <div>
-            <h1 style="margin-top: -10px;color: #425049;font-size:30px; ">欢迎来到我的 Vue 项目</h1>
+            <h1 style="margin-top: -10px;color: #425049;font-size:30px; ">My Vue 项目</h1>
         </div>
         <div class="opt-wrapper">
             <el-dropdown :hide-on-click="false">

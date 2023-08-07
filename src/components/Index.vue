@@ -4,7 +4,7 @@
             <el-header><Header/></el-header>
             <el-container>
                 <el-aside width="200px"><Aside/></el-aside>
-                <el-main><Main/></el-main>
+                <el-main><router-view></router-view></el-main>
             </el-container>
             <el-footer><Footer/></el-footer>
         </el-container>
@@ -14,12 +14,11 @@
 <script>
     import Header from "./Header";
     import Aside from "./Aside";
-    import Main from "./Main";
     import Footer from "./Footer";
 
     export default {
         name: 'Index',
-        components: {Header, Aside, Main, Footer},
+        components: {Header, Aside, Footer},
         props: {
             msg: String
         }
