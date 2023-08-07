@@ -1,5 +1,5 @@
 <template>
-    <div>footer div</div>
+    <div>数据状态：{{$store.state.userState}}</div>
 </template>
 
 <script>
