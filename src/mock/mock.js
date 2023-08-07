@@ -132,3 +132,25 @@ Mock.mock('/post/query','post',function(param){
         msg: '查询失败'
     }
 });
+
+Mock.mock('/post/menuList','get',function(){
+    const menu_data = [
+        {
+            name:'一级菜单1',
+            icon:'el-icon-location',
+            path:'/index/menu1',
+            component:'Main1'
+        },
+        {
+            name:'一级菜单2',
+            icon:'el-icon-document',
+            path:'/index/menu2',
+            component:'Main2'
+        }
+    ];
+
+    return{
+        menu_data
+    }
+});
+

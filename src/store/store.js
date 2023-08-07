@@ -7,7 +7,9 @@ import moduleB from "./module/moduleB";
 
 const state ={
     username: '管理员',
-    userState: 0
+    userState: 0,
+    menu_data: [],
+    isLoadRoute:false
 };
 
 const mutations = {
@@ -16,6 +18,12 @@ const mutations = {
     },
     setUserState(state, data){
         state.userState += data
+    },
+    setMenuData(state, data){
+        state.menu_data = data
+    },
+    setLoadRoute(state, data){
+        state.isLoadRoute = data
     }
 };
 
